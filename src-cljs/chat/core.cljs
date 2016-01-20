@@ -67,13 +67,13 @@
                                                                                                      (dissoc :chat-input)
                                                                                                      (assoc :messages messages))))))
                                                                    :error-handler error-handler})
-                           (.preventDefault %))} "Send Message"]])
+                           (.preventDefault %))} "SEND MESSAGE"]])
 
 (defn refresh-button []
    [:button {:class "button"
              :on-click #(do
                           (refresh-messages)
-                          (.preventDefault %))} "Refresh"])
+                          (.preventDefault %))} "REFRESH"])
 
 
 ;; Main App UI
